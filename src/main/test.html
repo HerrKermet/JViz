@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <title>ECharts Demo</title>
+            <script crossorigin="anonymous" integrity="sha512-ivdGNkeO+FTZH5ZoVC4gS4ovGSiWc+6v60/hvHkccaMN2BXchfKdvEZtviy5L4xSpF8NPsfS0EVNSGf+EsUdxA==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"></script>
+
+        <style>
+        #display-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <div id="display-container">
+    </div>
+            <script type="text/javascript">
+        var chart = echarts.init(document.getElementById("display-container"));
+        var option = {"tooltip":{"trigger":"item"},"legend":{},"series":[{"type":"treemap","data":{"children":{"name":"second","value":20},"name":"first","value":10}}]}
+        chart.setOption(option);
+    </script>
+
+    </body>
+
+</html>

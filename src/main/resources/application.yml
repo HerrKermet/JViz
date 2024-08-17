@@ -1,1 +1,7 @@
-spring.application.name=Viz
+spring:
+  application:
+    name: Viz
+
+server:
+  port: 8080
+
