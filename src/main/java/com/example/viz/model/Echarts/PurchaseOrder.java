@@ -1,4 +1,4 @@
-package com.example.viz.model;
+package com.example.viz.model.Echarts;
 
 import lombok.Getter;
 import lombok.Setter;
